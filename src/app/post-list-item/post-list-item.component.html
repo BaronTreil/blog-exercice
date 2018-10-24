@@ -5,4 +5,5 @@
   <i style="position: absolute; top:10px; right: 10px; color:rgb(168, 168, 168)">{{post.created_at | date:'short'}}</i>
   <button type="button" class="btn btn-success" style=" margin-right: 5px;" (click)="upVote()">Love it !</button>
   <button type="button" class="btn btn-danger" (click)="downVote()">Don't love it !</button>
+  <button type="button" class="btn btn-danger pull-right" (click)="removePost()">Delete</button>
 </li>

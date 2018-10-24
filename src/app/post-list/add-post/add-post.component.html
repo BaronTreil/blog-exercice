@@ -1,0 +1,12 @@
+<h2>Add a Post</h2>
+<form [formGroup]="newPostForm" (ngSubmit)="onSavePost()">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input for="titre" type="text" id="title" class="form-control" formControlName="title">
+  </div>
+  <div class="form-group">
+    <label for="title">Content</label>
+    <textarea for="titre" type="text" id="content" class="form-control" formControlName="content"></textarea>
+  </div>
+  <button class="btn btn-success" [disabled]="newPostForm.invalid" type="submit">Ajouter</button>
+</form>
